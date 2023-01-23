@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html body{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 300px;
+    height: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 100%);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container .image{
+    width: 100%;
+    height: 40%;
+}
+.container .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .info-container{
+    width: 95%;
+    height: 60%;
+    background-color: red;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.container .info-container .product-type{}
+.container .info-container .product-name{}
+.container .info-container .product-description{}
+.container .info-container .product-price{}
+.container .info-container .product-price .new-value{}
+.container .info-container .product-price .old-value{}
+
+
+@media screen and (min-width: 800px) {
+    .container{
+        max-width: 580px;
+        height: 400px;
+        flex-direction: row;
+    }
+    .container .image{
+        width: 50%;
+        height: 100%;
+    }
+    .container .image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .container .info-container{
+        width: 50%;
+        height: 100%;
+    }
+}
